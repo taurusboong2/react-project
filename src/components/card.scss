@@ -1,0 +1,62 @@
+.cardwrap {
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 5px;
+  .label {
+    color: rgb(170, 166, 166);
+    margin-bottom: -8px;
+  }
+  .title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .high {
+    padding: 10px 0;
+    color: red;
+    b {
+      font-size: 0.7rem;
+      color: #555;
+      text-decoration: line-through;
+    }
+  }
+  .rate_wrap {
+    padding: 15px 0 10px;
+    border-top: 2px solid #777;
+    .stars {
+      color: rgb(216, 216, 65);
+    }
+    .stars:nth-child(4),
+    .stars:nth-child(5) {
+      color: #777;
+    }
+  }
+
+  &.vt {
+    display: flex;
+    min-width: 350px;
+    height: 200px;
+    column-gap: 10px;
+    > img,
+    > div {
+      width: 50%;
+    }
+  }
+
+  &.big {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 300px;
+    .text_wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .rate_wrap {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}
