@@ -22,6 +22,7 @@ const StarSelf = () => {
     setColor(changedStar ? { color: 'red' } : { color: 'green' });
     console.log(starId);
     console.log(toggle);
+    // console.log(!changedStar);
   };
 
   return (
@@ -30,7 +31,7 @@ const StarSelf = () => {
       <h1>별점 기능 연습장</h1>
       {[...Array(5)].map((e, i) => {
         return (
-          <span key={i} id={'star' + i} style={color} onClick={click} toggle>
+          <span key={i} id={'star' + i} style={color} onClick={click}>
             ★
           </span>
         );
